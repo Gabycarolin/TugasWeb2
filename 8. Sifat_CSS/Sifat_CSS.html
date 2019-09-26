@@ -1,0 +1,60 @@
+    <!--<DOCTYPE html> berfungsi untuk memberikan informasi pada web browser bahwa dokumen ini adalah HTML.-->
+<!DOCTYPE html>
+
+    <!--<html> Ini adalah tag pembuka dari keseluruhan halaman web, dan akan ditutup dengan tag penutup </html>-->
+<html>
+            
+    <!--<head> Ini umumnya akan berisi kode seperti CSS dan lainnya yang tidak tampak pada browser.
+    Seperti title yang akan menampilkan judul pada tab browser, dan akan ditutup dengan </head>-->
+<head>
+
+        <!--<title></title> merupakan kode yang memerintahakan untuk menampilkan Judul pada tab browser.-->
+    <title>Contoh Inheritance dalam CSS</title>
+
+             <!--1. style type="text/css ini nantinya akan berisikan kode-kode CSS yang terpisah dari tag HTML.
+                 2. <div></div>digunakan untuk menampung beberapa element menjadi satu kelompok.
+                 3. border disini yang dimaksud yaitu garis tepi yang membungkus suatu kalimat atau kumpulan font yang diinginkan-->
+        <style type="text/css">
+
+                /*Disini saya membuat dua class yang berbeda, diantarnya yaitu class satu,
+                dan class dua.*/
+            div.satu {
+                    /*Pada class=”satu”, saya hanya membuat property border dan color pada tag div.satu. Karena prinsip inheritance dalam CSS, 
+                    seluruh kalimat pada tag <div> yang memiliki class=”satu” akan berwarna biru (sesuai dengan sifat inheritance-nya), 
+                    namun efek border tidak diturunkan kepada tag <p>.*/
+                border: 1px solid black;
+                color: blue;
+            }
+            div.dua {
+                    /*Pada class=”dua”, saya menambahkan nilai inherit untuk property border pada tag <p>. 
+                    Hasil dari nilai inherit ini akan membuat tag <p> juga memiliki border yang sama dengan yang didefenisikan pada 
+                    tag induknya.*/
+                border: 1px solid black;
+            }
+            p.dua {
+                /*Berikut adalah contoh dari kode efek border yang diturunkan pada tag <p>*/
+                border: inherit;
+            }       
+        </style>
+
+</head>
+
+<body>
+    <div class="satu">
+
+            <!--<p> sebuah paragraf yang dibuat untuk class satu yang didalamnya terdapat kumpulan kata,
+                lalu terdapat <em></em> yang memberikan efek cetak miring pada kumpulan kata yang dibungkus oleh <em>dan</em>-->
+        <p class="satu"> Kalimat ini tanpa <em class="satu">nilai property inherit</em> CSS
+        </p>
+    </div>
+<br />
+
+            <!--<p> sebuah paragraf yang dibuat untuk class dua yang didalamnya terdapat kumpulan kata,
+                lalu terdapat <em></em> yang memberikan efek cetak miring pada kumpulan kata yang dibungkus oleh <em>dan</em>-->
+    <div class="dua"> 
+        <p class="dua"> Kalimat ini menggunakan <em class="dua">nilai property inherit</em> CSS
+        </p>
+    </div>
+</body>
+
+</html>

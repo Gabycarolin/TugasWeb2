@@ -1,0 +1,87 @@
+    <!--<DOCTYPE html> berfungsi untuk memberikan informasi pada web browser bahwa dokumen ini adalah HTML.-->
+<!DOCTYPE html>
+
+    <!--<html> Ini adalah tag pembuka dari keseluruhan halaman web, dan akan ditutup dengan tag penutup </html>-->
+<html>
+
+    <!--<head> Ini umumnya akan berisi kode seperti CSS dan lainnya yang tidak tampak pada browser.
+    Seperti title yang akan menampilkan judul pada tab browser, dan akan ditutup dengan </head>-->
+<head>
+
+        <!--<title></title> merupakan kode yang memerintahakan untuk menampilkan Judul pada tab browser.-->
+    <title>Belajar Cara Penggunaan Selector CSS</title>
+
+        <!--1. <style type="text/css ini nantinya akan berisikan kode-kode CSS yang terpisah dari tag HTML.
+            2. h2, h3{...} disini berisikan kode-kode yang akan dijalankan pada text yang terdapat diantara <h2> sampai </h2> dan <h3> sampai </h3>.
+            3. p strong{...} disini berisikan kode-kode yang akan dijalankan pada text yang terdapat diantara <strong> samapi </strong>.
+            4. h2.judul, paragraf{...} disini berisikan kode-kode yang akan dijalankan pada text yang terdapat
+            pada h2 class="judul", dan class="paragraf"
+            5. #belajar_html, {...} disini berisikan kode-kode yang akan dijalankan pada text yang terdapat
+            pada id="belajar_html".
+            6. #belajar_css{...} disini berisikan kode-kode yang akan dijalankan pada text yang terdapat
+            pada id="belajar_css
+            7. h3.subheader{...} disini berisikan kode-kode yang akan dijalankan pada text yang terdapat
+                pada class="judul subheader"-->
+                
+    <style type="text/css">
+        h2, h3{
+                /*memberikan warna blue pada font*/
+            color: blue;
+        }
+        p strong{
+                /*memberikan warna red pada font yang dibungkus antara <strong> dan </strong> */
+            color: red;
+        }
+        h2.judul , .paragraf {
+                /*memberikan efek font bercetak miring*/
+            font-style: italic;
+        }
+        #belajar_html, #belajar_css, h3.subheader {
+                /*mengatur ukuran font sebesar 14 point*/
+            font-size:14pt;
+        }
+    </style>
+</head>
+
+<body>
+
+        <!--1. <h2></h2> digunakan untuk menunjukkan bagian yang paling penting kedua (atau tingkat tertinggi kedua) 
+            pada halaman web (biasanya digunakan untuk sub judul).
+            2. <h2 class="judul"> yang artinya saya membuat sebuah class bernama "judul".-->
+    <h2 class="judul">BELAJAR CSS</h2>
+
+        <!--1. <p> berarti membuka sebuah paragraf baru, dan dapat ditutup dengan kode </p>. 
+            2. <strong></strong> disini yaitu memberikan efek agar font bercetak tebal.
+            3. <em></em> disini yaitu memberikan efek agar font bercetak miring.-->
+    <p> Ini <strong> adalah </strong> sebuah <em> paragraf </em></p>
+
+        <!--1. <p id="belajar_html" class="paragraf"> disini yaitu saya membuat sebuah id
+            bernama "belajar_html" dan sebuah class yang bernama "paragraf"
+            2.  <a href="alamat link"> merupakan kode untuk menyisipkan sebuah link yang dapat dituju oleh User.
+            3. target="_blank" yaitu berfungsi agar User dapat membuka tab baru tanpa menutup tab yang lama.-->
+    <p id="belajar_html"class="paragraf"> Saya sedang belajar HTML dari<a href="https://www.w3schools.com/" target="_blank"> w3schools </a>
+        akan terbuka pada tab baru
+    </p>
+
+        <!--1. <p id="belajar_css" class="paragraf"> disini yaitu saya membuat sebuah id
+            bernama "belajar_css" dan sebuah class yang bernama "paragraf"-->
+    <p id="belajar_css" class="paragraf">Saya sedang belajar CSS, mohon jangan diganggu!</p>
+    <br>
+
+        <!--<h3 class="judul subheader"> disini yaitu saya membuat sebuah class yang bernama "judul subheader"-->
+    <h3 class="judul subheader">Daftar Belanjaan</h3>
+
+                <!--1. <ol></ol> digunakan untuk mendefinisikan list item yang berurutan. 
+                    2. <li></li> digunakan untuk mendefinisikan list item
+                    3. <em></em> disini yaitu memberikan efek agar font bercetak miring.-->
+        <ol>
+            <li><em>Minyak Goreng</em></li>
+            <li>Sabun Mandi</li>
+            <li>Detergen</li>
+            <li>Shampoo</li>
+            <li>Obat Nyamuk</li>
+            <li>Parfum</li>
+        </ol>
+</body> 
+
+</html>

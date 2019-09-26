@@ -1,0 +1,9 @@
+    /*  1. h2{...} disini berisikan kode-kode yang akan dijalankan pada text yang terdapat diantara <h2> dan </h2> 
+    pada tag HTML.
+        2. background-color: red yaitu memberikan warna merah pada background web.
+        3. color: white yaitu memberikan warna putih pada font. 
+    */
+h2 {
+    background-color: red;
+    color: white; 
+}

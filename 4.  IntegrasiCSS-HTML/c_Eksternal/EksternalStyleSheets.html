@@ -1,0 +1,33 @@
+    <!--<DOCTYPE html> berfungsi untuk memberikan informasi pada web browser bahwa dokumen ini adalah HTML.-->
+<!DOCTYPE html>
+
+    <!--<html> Ini adalah tag pembuka dari keseluruhan halaman web, dan akan ditutup dengan tag penutup </html>-->
+<html>
+
+    <!--<head> Ini umumnya akan berisi kode seperti CSS dan lainnya yang tidak tampak pada browser.
+    Seperti title yang akan menampilkan judul pada tab browser, dan akan ditutup dengan </head>-->
+<head>
+
+        <!--<title></title> merupakan kode yang memerintahakan untuk menampilkan Judul pada tab browser.-->
+    <title>Contoh Metode Eksternal Style Sheets CSS</title>
+
+            <!--1. style type="text/css ini nantinya akan berisikan kode-kode CSS yang terpisah dari tag HTML.-->
+        <style type="text/css">
+
+                /*@import url(belajar.css) ini berarti memanggil file bernama "belajar.css" yang saya buat sebelumnya 
+                yang berisikan kode CSS*/
+            @import url(belajar.css);
+        </style>
+</head>
+
+<body>
+
+        <!--<h2></h2> digunakan untuk menunjukkan bagian yang paling penting kedua (atau tingkat tertinggi kedua) 
+            pada halaman web (biasanya digunakan untuk sub judul)-->
+    <h2>
+        Text ini akan berwarna putih dan background warna merah
+    </h2>
+
+</body>
+
+</html>

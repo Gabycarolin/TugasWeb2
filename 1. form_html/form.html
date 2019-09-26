@@ -1,0 +1,81 @@
+    <!--<DOCTYPE html> berfungsi untuk memberikan informasi pada web browser bahwa dokumen ini adalah HTML.-->
+<!DOCTYPE html>
+
+    <!--<html> Ini adalah tag pembuka dari keseluruhan halaman web, dan akan ditutup dengan tag penutup </html>-->
+<html> 
+
+    <!--<head> Ini umumnya akan berisi kode seperti CSS dan lainnya yang tidak tampak pada browser.
+    Seperti title yang akan menampilkan judul pada tab browser, dan akan ditutup dengan </head>-->
+<head>
+
+        <!--<title></title> merupakan kode yang memerintahakan untuk menampilkan Judul pada tab browser.-->
+    <title> Belajar Membuat Form </title>
+</head>
+
+    <!--<body> ini akan berisi semua elemen yang akan tampil pada halaman web, dan ditutup dengan</body>-->
+<body>
+
+        <!--1. form action disini berfungsi untuk menjelaskan data form yang akan dikirimkan.
+            2. formulir.html disini merupakan alamat yang digunakan untuk memproses isi data form.
+            3. method="get" disini yaitu menunjukkan nilai default yang seandainya atribut method ini diisi, 
+            maka isian form akan terlihat pada url browser.-->
+    <form action="formulir.html" method="get">
+
+            <!--1. input type "text" disini yaitu inputan biasa yang dapat menerima input berupa text.
+                2. name="nama" disini nantinya akan menjadi variabel form.
+                3. value ini memberikan inputan "Masukkan Nama Kamu" pada textbox kosong-->
+        Nama : <input type="text" name="nama" value="Masukkan Nama Kamu"/>
+
+        <br> <!--br ini merupakan kode untuk memperintahkan agar terdapat 1 enter pada baris tersebut.-->
+        
+            <!--1. input type="password" disini merupakan sebuah inputan text namun tidak akan terlihat.
+                2. name="password" disini merupakan tempat textbox kosong yang akan berisi sebuah inputan password.-->
+        Password : <input type="password" name="password"/>
+        <br>
+
+            <!--1. input type="radio" ini dimaksudkan agar user hanya dapat memilih satu diantara banyak pilihan grup radio.
+                2. name="jenis_kelamin" disini merupakan sebuah inputan jenis_kelamin user yang didaftarkan.
+                3. checked disini merupakan kode bahwa tanda centang atau titik yang otomatis muncul pada pilihan Laki-Laki.-->
+        Jenis Kelamin : <input type="radio" name="jenis_kelamin" value"laki-laki" checked/>
+                        Laki-Laki
+                        <input type="radio" name="jenis_kelamin" value"perempuan" />
+                        Perempuan
+        <br>
+
+            <!--1. input type="checkbox" ini dimaksudkan agar user dapat tidak memilih atau bahkan memilih lebih dari satu diantara banyak pilihan grup radio. 
+                2. checked disini merupakan kode bahwa tanda centang atau titik yang otomatis muncul pada pilihan Menulis. -->
+        Hobi :  <input type="checkbox" name="hobi_baca"/> Membaca Buku
+                <input type="checkbox" name="hobi_nulis" checked/> Menulis
+                <input type="checkbox" name="hobi_mancing"/> Memancing
+                <input type="checkbox" name="hobi_nyanyi" /> Menyanyi 
+                <br>
+
+            <!--1. select name disini digunakan untuk inputan yang telah tersedia nilainya, dan user hanya dapat
+                memilih sesuai yang ada dalam pilihan tersebut.
+                2. option disini digunakan untuk membuat atau menuliskan beberapa pilihan.
+                3. Jika atribut value berisi nilai, maka nilai value tersebut yang akan dikirimkan.
+                    Namun ada tidaknya atribut value tersebut, tidak tampak dalam tampilan form.-->
+        Asal Kota : <select name="asal_kota">
+                        <option value="Kota Jakarta"> Jakarta</option>
+                        <option>Bandung</option>
+                        <option value="Kota Semarang"> Semarang</option>
+                    </select>
+                    <br>
+
+            <!--1. textarea ini sama dengan input type text, namun textarea ini lebih besar dan dapat diatur jumlah baris dan kolom.
+                2. rows="5" berarti terdapat 5 baris.
+                3. cols="20" berarti terdapat 20 kolom.-->
+        Komentar Anda : <textarea name="komentar" rows="5" cols="20">
+            Silahkan katakan isi hati Anda !!!
+        </textarea>
+        <br>
+
+            <!--input type submit ini akan menampilkan tombol (button)cuntuk memproses form.
+            value="Mulai Diproses" berarti menampilkan kata tersebut pada tombol.-->
+        <input type="submit" value="Mulai Diproses !">
+
+
+        
+    </form>
+</body>
+</html>

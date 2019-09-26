@@ -1,0 +1,59 @@
+    <!--<DOCTYPE html> berfungsi untuk memberikan informasi pada web browser bahwa dokumen ini adalah HTML.-->
+<!DOCTYPE html>
+
+    <!--<html> Ini adalah tag pembuka dari keseluruhan halaman web, dan akan ditutup dengan tag penutup </html>-->
+<html>
+            
+    <!--<head> Ini umumnya akan berisi kode seperti CSS dan lainnya yang tidak tampak pada browser.
+    Seperti title yang akan menampilkan judul pada tab browser, dan akan ditutup dengan </head>-->
+<head>
+
+        <!--<title></title> merupakan kode yang memerintahakan untuk menampilkan Judul pada tab browser.-->
+    <title>Contoh Penulisan Kode Warna CSS</title>
+
+
+        <!--1. style type="text/css ini nantinya akan berisikan kode-kode CSS yang terpisah dari tag HTML.
+                 2. p.satu, p.dua, p.tiga, p.empat, p.lima didalam style ini, memberikan kumpulan kode untuk 
+                dapat dijalankan untuk setiap elemen yang dibungkus oleh <p masing-masing class> dan </p>-->
+    <style type="text/css">
+        p.satu {
+            /*merupakan pewarnaan font dengan menggunakan nilai RGB #0000ff yang berarti blue*/
+            color:#0000FF;
+        }
+        p.dua {
+            /*merupakan pewarnaan font dengan menggunakan nilai RGB #f00 yang berarti red*/
+            color:#F00;
+        }
+        p.tiga {
+            /*merupakan pewarnaan font dengan menggunakan angka desimal dengan format rgb(10, 255, 10) yang berarti green*/
+            color:rgb(10, 255, 10);
+        }
+        p.empat {
+            /*merupakan pewarnaan font dengan menggunakan kata warna dengan bahasa inggris orange yang berarti jingga*/
+            color:orange;
+        }
+        p.lima{
+            /*menjadikan tulisan ini agar menjadi transparan atau tak terlihat pada halaman web*/
+            color:transparent;
+        }
+    </style>
+</head>
+
+<body>
+        <!--Berikut adalah masing-masing class yang telah saya atur kode pada <style type="text/css">-->
+    <p class="satu"> Kalimat ini akan berwarna biru </p>
+    <br /> <!--br ini merupakan kode untuk memperintahkan agar terdapat 1 enter pada baris tersebut.-->
+   
+    <p class="dua"> Kalimat ini akan berwarna merah </p>
+    <br />  <!--br ini merupakan kode untuk memperintahkan agar terdapat 1 enter pada baris tersebut.-->
+   
+    <p class="tiga"> Kalimat ini akan berwarna hijau</p>
+    <br /> <!--br ini merupakan kode untuk memperintahkan agar terdapat 1 enter pada baris tersebut.-->
+   
+    <p class="empat"> Kalimat ini akan berwarna orange </p>
+    <br /> <!--br ini merupakan kode untuk memperintahkan agar terdapat 1 enter pada baris tersebut.-->
+   
+    <p class="lima"> Kalimat ini sepertinya tidak akan terlihat </p>
+</body>
+
+</html>
